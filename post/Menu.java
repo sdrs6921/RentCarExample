@@ -11,7 +11,7 @@ public class Menu {
 	
 	public void run(Scanner sc) {
 		boolean flag = true;
-		String str = "1.리뷰등록 2.리뷰검색 3.리뷰수정 4.리뷰삭제 5.종료>>";
+		String str = "1.리뷰등록 2.리뷰검색 3.리뷰수정 4.리뷰삭제 5.이전 메뉴>>";
 		int menu;
 		
 		System.out.println("리뷰 기능을 실행합니다.");

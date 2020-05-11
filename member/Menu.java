@@ -25,12 +25,14 @@ public class Menu {
 					if (curUser.isAdmin()) {
 						System.out.println("관리자 모드 실행");
 						//TODO 관리자 모드로 들어가는 Menu
+						car.Menu carMenu = new car.Menu();
+						carMenu.run(sc);
 					}
 					else {
 						System.out.println("사용자 모드 실행");
 						//TODO 사용자 모드 실행
-						post.Menu postMenu = new post.Menu(new post.ServiceImpl(new post.DaoImpl()));
-						postMenu.run(sc);
+						user.Menu userMenu = new user.Menu();
+						userMenu.run(sc);
 					}
 				} else {
 					System.out.println("로그인 실패!!");
